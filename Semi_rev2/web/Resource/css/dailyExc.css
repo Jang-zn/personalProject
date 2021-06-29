@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#content_container, #content_container * {
+	margin: 0;
+}
+
+#dailyExc_content_container {
+	display: flex;
+	border: lightgreen 1px solid;
+}
+#dailyExc_title{
+	color:red;
+}
+#dailyExc_title {
+	padding: 1%;
+	font-family: 'PFStardust';
+	color: red;
+}
+
+
+#dailyExc_content {
+	margin: 1%;
+	width: 50%;
+	border: lightgreen 1px solid;
+}
+
+#dailyExc_list {
+	margin: 1%;
+	width: 50%;
+	border: lightgreen 1px solid;
+}
+
+.exc_plan_list, .exc_list {
+	list-style: none;
+	border-bottom: greenyellow 1px solid;
+}
+
+.exc_plan_list>span, .exc_list>span {
+	display: inline-block;
+	padding: 1%;
+}
+
+.exc_list:hover {
+	background-color: gold;
+	font-weight: bold;
+}
+
+ul#exc_list, ul#exc_plan_list {
+	margin: 2%
+}
+
+#pageBar h4{
+	text-align: center;
+	margin-top: 2%;
+}
+
+#complete_exc {
+	margin-top: 3%;
+}
+
+.exc_plan_title {
+	list-style: none;
+	border-bottom: #009688 solid 2px;
+	margin-bottom: 3%;
+	width: 98%;
+	padding: 1%;
+}

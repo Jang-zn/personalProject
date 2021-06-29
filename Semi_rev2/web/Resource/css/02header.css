@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ------------------전체 공통---------------------  */
+	*{
+		margin:0;
+		padding:0;
+		/* border: 0.1px solid red;  */
+	}
+	.sub a:link {
+		color : white;
+		font-family: 'GongGothicMedium' !important;
+		font-size: 2rem;
+		font-weight: light;
+}
+	.sub a:visited {
+	  color : white;
+	  font-family: 'GongGothicMedium' !important;
+	  font-size: 2rem;
+		font-weight: light;
+	}
+	.sub a:hover {
+	  color : white;
+	  font-family: 'GongGothicMedium' !important;
+	  font-size: 2rem;
+		font-weight: light;
+		cursor:pointer;
+	}
+	.sub a:active {
+	  color : white;
+	  font-family: 'GongGothicMedium' !important;
+	  font-size: 2rem;
+		font-weight: light;
+	}
+		
+	/* body{
+		margin-left:100px;
+		margin-right:100px;
+	} */
+     
+	
+      
+ /* 	#content_container {
+		margin-left:100px;
+		margin-right:100px;
+		
+	}  */
+        
+        /* ------------------헤더---------------------  */
+	#header_container {
+		background-color: black; 		
+		margin-right: auto;
+		margin-left: auto;	
+		/* height:5rem; */		
+	}
+
+	#menu_container, #profile_area, #login_area{
+		 margin-top:1.5rem;	 
+		 text-align:center;
+	}
+	
+
+	#logo_area img {
+		height: 70%;
+		width: auto; 	
+	}
+	
+	#logo_area img:hover{
+		cursor:pointer;
+	}
+	
+	
+	.profilePhoto {
+		width: auto;
+		height: 30%;
+	}
+
+	
+	.nickName{	
+		text-align:center;
+		color:cadetblue;
+		font-family: 'GongGothicMedium';
+		font-size:2rem;
+	}
+	.logout{
+		text-align:center;
+		color:white;
+		font-family: 'GongGothicMedium';
+		font-size:2rem;
+	}
+	.logout:hover{
+		color:#da7316;
+		cursor:pointer;
+	}
+	.navigator_menu {
+		list-style: none;
+		margin-right: 40px;
+		height: 50px;
+		border: 1px solid lightblue;
+	}
+
+	div#menu_line>div>a{	
+		color:white;
+		font-family: "Press Start 2P";
+	}
+
+		/* 주메뉴 */
+	div#menu_line>div{	
+		font-family: "Press Start 2P" !important;
+		text-align: center;
+		font-size: 1.9rem;		
+		text-align: center;
+		color:white;
+		
+		list-style: none;
+		font-weight:bold;
+		display: block;
+		transition: all 0.3s;
+	}
+	
+	div#menu_line>div:hover {
+		background: #009688;
+		color: #fff;
+		text-decoration:underline;
+		cursor:pointer;
+	}	
+	
+        /*로그인 버튼*/
+	#login_area{
+		font-family: "Press Start 2P" !important;
+		text-align: center;
+		font-size: 2rem;
+		color:white;
+	}
+	/* #login_area>span{
+		font-family: "Press Start 2P";
+		text-align: center;
+		font-size: 1.9rem;
+		color:white;
+		transition: all 0.3s;
+		cursor:pointer;
+        } */
+    
+	#login_area:hover{
+		color: #009688;
+		text-decoration:underline;
+		cursor:pointer;
+	}	
+
+         /* 하위메뉴 */
+	.plan_menu,
+	.progress_menu,
+	.community_menu {
+		text-align: center;
+		font-size: 1.7rem;
+		margin:0;
+		padding-bottom: 1px;
+		width: 100%;
+		list-style: none;
+		background-color:black;
+		transition: all 0.2s;
+
+	}
+	
+	.sub {
+		font-family: "gothic";
+		display: none;
+		float: unset;
+		top: 27px;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		background: #eee;
+		position:absolute;
+		z-index: 200;
+	}
+	.sub>div:hover {
+		background: #009688;
+		color: #fff;
+		cursor:pointer;
+	}	
+
+
+	#aside_content {
+		display: flex;
+	}
+        
+	footer#footer_container{
+		height:100px;
+		border:1px solid lightblue;
+		border-top:4px solid rgba(48, 48, 107, 0.486);
+	}
+	
+	footer#footer_container>p{
+		color:cadetblue;
+		text-align: center;
+		font-size: 20px;
+	}
+    .photo01{
+	    border-radius:0.2em;
+		border:1.5px solid lightgray;
+		text-align:center;
+		font-family: 'GongGothicMedium';
+		font-size:2rem;
+		margin:1rem;
+		padding:0.5rem;
+    }   
+    .photo02{
+    	border-top: 1px dashed lightgray;
+    	padding:0.5rem;
+    }
+    

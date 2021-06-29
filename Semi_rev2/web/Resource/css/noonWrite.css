@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input[name="writer"] {
+	border: 1px white solid;
+	font-size:20px;
+}
+.title01{
+	font-family: 'PFStardust';
+	font-size:3.5rem;
+	font-weight:bold;	
+}
+.title02{
+	font-family:'GongGothicMedium';
+	font-size:3rem;
+	margin:0;
+	padding:0;
+}
+span{
+	font-family: 'GongGothicLight';
+}
+#n_content_img{	
+	padding-top:3%;
+	padding-bottom:2%;	
+	height:600px;
+}
+
+#n_content_img>img {
+	width:100%;
+	height:100%;
+	border-radius:10px;
+}
+#n_comment{
+	margin-top:6.5%;
+	padding:2%;
+	
+}
+#upload_area{
+	padding:1%;
+	margin:1%;	
+}
+/* .writeGap{
+	height:10rem;
+} */
+#submit_area{
+	padding-top:1%;
+	padding-bottom:1%;
+	
+}
+/* #submit_area>button{
+	margin:1%;
+
+	
+} */
+#submit_area img{
+	width:100%;
+}
+
+.img_obj{
+	height:200px;
+}
+
+#upload_area{
+	font-family: 'GongGothicLight';
+}
+
+#writegap{
+	height:7.8rem;
+}
+
+
+#n_content_img{
+	border-radius:0.2em;
+  	border:1px solid lightgray;
+  	padding:0;
+  	height:100%;
+  	width:100%;
+}
+.btn02>input{
+	border-radius:0.2em;
+  	border:1px solid black;
+  	background-color:lightgray;
+  	font-family: 'GongGothicLight';
+  	font-size:2rem;
+  	text-align: center;
+  	padding:0.3rem;
+  	width:7rem;
+}
+
+.btn02>input:hover{
+	background-color:cadetblue;
+}

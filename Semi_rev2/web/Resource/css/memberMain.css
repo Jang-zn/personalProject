@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+/* #content_container * {
+	border: 1px black solid;
+}
+
+#weekly_container {
+	height: 250px;
+	display: flex;
+}
+
+#monthly_container {
+	height: 300px;
+}
+
+#noonbody_container_main {
+	height: 250px;
+}
+
+#daily_log_container_main {
+	height: 300px;
+	display: flex;
+}
+
+div#member_rank {
+	height: 150px;
+}
+
+div#member_info {
+	display: flex;
+}
+
+div#profile_area_content {
+}
+
+div#profile_area_content>img {
+	width: 100%;
+	height: 100%;
+}
+
+div#member_info_area {
+
+}
+
+div#weekly_check {
+}
+
+div#weekly_check_title_main {
+
+	height: 17%;
+	display: flex;
+}
+
+div#weekly_check_title_main>span {
+	display: inline-block;
+}
+
+div#weekly_check_title_main>button {
+}
+
+div#weekly_check_daybyday_exc {
+
+	display: flex;
+	height: 36%;
+
+
+}
+
+div#weekly_check_daybyday_menu {
+
+	display: flex;
+	height: 36%;
+}
+
+div.day {
+	border-radius: 100%;
+	border: 3px black solid;
+	text-align: center;
+}
+
+div.text_plan {
+	text-align: center;
+}
+
+div#monthly_check_title_main {
+	height: 15%;
+	display: flex;
+}
+
+div#monthly_check_main {
+	height: 84%;
+}
+
+div#monthly_check_title_main>span {
+	display: inline-block;
+}
+
+div#monthly_check_title_main>button {
+}
+
+div#monthly_check_content {
+	height: 84%;
+	display: flex;
+}
+
+div#monthly_plan_trend {
+}
+
+div#monthly_plan_analysis {
+}
+
+div#noonbody_title_main {
+	height: 15%;
+	display: flex;
+}
+
+div#noonbody_title_main>span {
+	display: inline-block;
+}
+
+div#noonbody_title_main>button {
+}
+
+div#noonbody_thumb_area {
+	display: flex;
+	height: 85%;
+}
+
+div.noonbody_thumb {
+	width:100%;
+}
+
+div#noonbody_left, div#noonbody_right {
+}
+
+div#daily_log_exc_area {
+	height: 100%;
+}
+
+div#daily_log_menu_area {
+	height: 100%;
+}
+
+div#daily_log_exc_title_main {
+	height: 15%;
+	display: flex;
+}
+
+div#daily_log_exc_title_main>span {
+	display: inline-block;
+}
+
+div#daily_log_exc_title_main>button {
+}
+
+div#daily_log_exc_list {
+	height: 85%;
+}
+
+div#daily_log_menu_title_main {
+	height: 15%;
+	display: flex;
+}
+
+div#daily_log_menu_list {
+	height: 85%;
+}
+
+div#daily_log_menu_title_main>span {
+	display: inline-block;
+}
+
+div#daily_log_menu_title_main>button {
+	
+} */

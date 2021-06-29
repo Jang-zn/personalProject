@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ /* 로그인 로고 */
+	.login {
+		margin-top:5%;
+		margin-bottom:5%;
+		padding:2%;
+		
+	}
+	.login h2 {
+		padding: 0 0 20px;
+		font-family: 'PFStardust';	
+		font-size: 60px;
+		font-weight:bolder;
+		color: black;
+		border-bottom: 0.5rem dotted black;
+		text-align: center;
+		line-height: 1;
+	}	
+
+	#userId,
+	#password  {	
+		width: 300px;
+		height: 40px;
+		
+		font-family: 'GongGothicMedium' !important;
+		font-weight:light;
+		
+  		border-radius:0.2em;
+  		border:1.5px solid black;
+	}
+
+	
+
+	label, h3 {
+		font-family: 'PFStardust';	
+		font-size: 16px;
+		color: #000000;
+		margin-left:2px;
+		margin-bottom: 3px;
+		padding:0 0 0 0;
+	}
+	#saveId {
+		text-align: center;
+		font-family: 'GongGothicMedium';
+		font-weight:light;
+	}
+	
+
+	.login li input::-webkit-input-placeholder {
+		font-family: 'GongGothicMedium';
+		font-weight:light;
+		font-size: 18px;
+	}
+
+	.login li input[type='checkbox']:checked + label {
+	color: red;
+	}
+
+	#sign_page {
+		width:300px;
+	}
+	#sign_page>div>a{		
+		font-family: 'GongGothicMedium';
+		font-weight:light;
+	
+	}
+	#sign_page{
+		text-align: center;
+	}
+	.signup{
+		font-family: 'GongGothicLight';
+		text-align: center;
+	}
+	.signup a:link, .signup a:visited, .signup a:active{
+		color: cadetblue;
+		
+	}
+	.signup  a:hover{
+		color: #da7316;
+		text-decoration:none;
+	}
+
+	#login_btn {
+  		background-color: cadetblue;
+		font-family: 'PFStardust';	
+  		font-size: 25px;
+  		font-weight:bolder;
+  		color: black;
+  		width: 300px;
+  		height: 46px;
+  		border-radius:0.2em;
+  		border:1.5px solid black;
+  		outline:0;
+	}
+	#login_btn:hover{
+		background-color:#da7316;
+	}
+
+	
+	

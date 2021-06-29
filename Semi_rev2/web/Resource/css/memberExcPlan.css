@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title02{	
+	font-family: 'PFStardust';
+	font-size:2.7rem;
+	font-weight:bold;
+}
+
+.title00{	
+	font-family: 'GongGothicMedium';
+	font-size:2.5rem;
+	font-weight:bold;	
+}
+
+*{
+	    font-family: 'GongGothicMedium';
+}
+#exc_name{
+	padding:5px;
+	    margin-left: -6px;
+}
+#sub_change>div:hover {
+	color:cadetblue;
+	transition: all 0.3s;
+}
+#sub_change>span>a {
+	background-color:lightblue;
+}
+
+#list_container {
+	
+}
+
+div#exc_list {
+	
+	
+}
+
+div#exc_list_info {
+	
+	transition:all 0.2s;
+	
+
+}
+
+#exc_select {
+	display: flex;
+}
+
+div#exc_img {
+	
+	height: 300px;
+	
+}
+
+div#exc_submit {
+
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+}
+
+div#exc_detail_info_container {
+	margin-top: 1%;
+}
+
+.list {
+	list-style: none;
+}
+
+.btn{
+	border:1px solid #ccc;
+}
+.border{
+	padding-bottom:3px;	
+}
+.border>img{
+	
+}
+img{
+	width:100%;
+	height:100%;
+	border:1px dotted gray;
+}
+.clickcheck{
+	transition:all 0.3s;
+	margin:1%;
+	border-bottom:1px dashed gray;
+	height:8em;
+	overflow:hidden;
+}
+.clickcheck:hover{
+	cursor:pointer;
+	background-color:rgba(95,158,160,0.25);
+}
+
+#exc_video{
+	position: relative;
+	width:100%;
+	padding-left: 20px;
+	padding-bottom: 58%;
+	
+}
+#exc_video iframe {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+.exc_box_info{
+	margin-top:0.4rem;
+	
+}
+
+.listimgbox img{
+	margin-top:0.3em;
+	width:7em;
+	height:7em;
+	
+}
+.paddingb{
+	padding-bottom:5px;
+	font-size:1.7rem;
+}

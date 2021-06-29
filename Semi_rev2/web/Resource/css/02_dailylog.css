@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#content_container, #content_container * {
+	margin: 0;
+}
+
+#dailyExc_content_container {
+	display: flex;
+	border:1.5px dashed darkgray;	
+	border-radius:0.2em;
+}
+#dailyExc_title{
+	color:red;
+}
+#dailyExc_title {
+	padding: 1%;
+	font-family: 'PFStardust';
+	color: black;
+
+}
+
+#personal_record_container{
+	 font-family: 'GongGothicLight';
+	font-size:3rem;
+}
+#dailyExc_content {
+	margin: 1%;
+	width: 50%;
+	border: lightgreen 1px solid;
+	font-family: 'GongGothicLight';
+	border-radius:0.2em;
+	 border:1.5px dashed darkgray;	
+}
+#timecho>select{
+	border-radius:0.2em;
+border:1px solid lightgray;
+	
+}
+
+#dailyExc_list {
+	margin: 1%;
+	width: 50%;
+	border: lightgreen 1px solid;
+	font-family: 'GongGothicLight';
+	
+  	border:1.5px dashed darkgray;	
+}
+
+.exc_plan_list, .exc_list {
+	list-style: none;
+	border:1.5px dashed darkgray;
+	padding-left:15px;
+}
+
+.exc_plan_list>span, .exc_list>span {
+	display: inline-block;
+	padding: 1%;
+}
+
+.exc_list:hover {
+	background-color: gold;
+	font-weight: bold;
+}
+
+ul#exc_list, ul#exc_plan_list {
+	margin: 2%
+}
+
+#pageBar>div{
+	text-align: center;
+	margin-top: 2%;
+}
+
+#complete_exc {
+	margin-top: 3%;
+}
+
+.exc_plan_title {
+	border-bottom: 1.5px dashed darkgray;
+	margin-bottom: 3%;
+	padding: 1%;
+}
+.centername{
+	text-align: center;
+}
+.exc_plan_title>span{
+	padding-left:15px;
+	padding-right:15px;
+}
+.categoryLine{
+	border-right:1px dashed gray;
+	width:50px;
+}
+
+.exc_list>span{
+	padding-left:10px;
+	padding-right:20px;
+}
+.date{
+	margin-left:15px;
+}
