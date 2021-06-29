@@ -1,0 +1,4 @@
+/classes/
+*.properties
+*.key
+*.class
