@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<properties resource="Driver.properties"/>
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL"/>
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.member.model.vo.Member" alias="member"/>
+		<typeAlias type="com.member.model.vo.MemberExc" alias="memberExc"/>
+		<typeAlias type="com.member.model.vo.MemberMenu" alias="memberMenu"/>
+		<typeAlias type="com.gallary.model.vo.Gallary" alias="gallary"/>
+		<typeAlias type="com.board.model.vo.Board" alias="board"/>
+		<typeAlias type="com.board.model.vo.Reply" alias="reply"/>
+	</typeAliases>
+	<environments default="semi">
+		<environment id="semi">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}"/>
+				<property name="url" value="${url}"/>
+				<property name="username" value="${user}"/>
+				<property name="password" value="${pw}"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="/sql/board-mapper.xml"/>
+		<mapper resource="/sql/member-mapper.xml"/>
+		<mapper resource="/sql/plan-mapper.xml"/>
+		<mapper resource="/sql/gallary-mapper.xml"/>
+	</mappers>
+</configuration>

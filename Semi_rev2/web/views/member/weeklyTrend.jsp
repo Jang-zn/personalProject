@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css"	href="<%=request.getContextPath()%>/Resource/css/font.css">
 
 <%
-	// 오늘 날짜 생성
+// 오늘 날짜 생성
 	Calendar today=Calendar.getInstance();
 
 	int su=today.get(Calendar.DAY_OF_WEEK); //요일-숫자
@@ -30,8 +30,8 @@
 	} 
 	
 	// 일간 계획 가져오기
-	List<MemberExcList> excList=(List<MemberExcList>)request.getAttribute("list01");
-	List<MemberMenuList> menuList=(List<MemberMenuList>)request.getAttribute("list02");
+	List<MemberExc> excList=(List<MemberExc>)request.getAttribute("list01");
+	List<MemberMenu> menuList=(List<MemberMenu>)request.getAttribute("list02");
 	
 	
 	//연속 달성일 받아오기
@@ -42,7 +42,6 @@
 	//통계 결과 받아오기
 	List<ExcInfo> excStatistic=(List<ExcInfo>)request.getAttribute("excStatistic");
 	MenuInfo menuStatistic=(MenuInfo)request.getAttribute("menuStatistic");
-	
 %>
 	</div>
 	<!--------------- 배너 ---------->
@@ -67,7 +66,7 @@
         <!-- 주간 달성 현황 -->
         <div class="row">
             <div class="col-md-3 title01" style="margin-bottom:1rem;">
-                > <%=today.get(Calendar.MONTH)+1 %>월 <%=ju %>번째 주 달성 현황
+                > <%=today.get(Calendar.MONTH)+1%>월 <%=ju%>번째 주 달성 현황
             </div>
             <div class="col-md-12">
                 <div class="row">
@@ -200,14 +199,18 @@
                 <!-- 운동 -->
                 <div class="row">
                     <div class="col-md-6 title01">
-                    	<div>> <%=today.get(Calendar.MONTH)+1 %>월 <%=today.get(Calendar.DATE) %>일 운동 계획</div>
+                    	<div>> <%=today.get(Calendar.MONTH)+1%>월 <%=today.get(Calendar.DATE)%>일 운동 계획</div>
                     </div>
                 </div>
                 <div class="row listContainer01">
                     <div class="col-md-12">
-                    <%if(excList.isEmpty()){  %>
+                    <%
+                    if(excList.isEmpty()){
+                    %>
                     	<div class="list02 noPlan"> 오늘 예정된 운동이 없습니다.</div>
-                    <%}else{%>
+                    <%
+                    }else{
+                    %>
                     <div class="row">
                     	<div class="col-md-12">
                     		<div class="row list01">
@@ -222,23 +225,25 @@
 	                    	<!-- 운동 이름은 운동 id로 가져와야 됨 -->
 	                    	
                     <%
-                    int count=0;
-                    for( MemberExcList m : excList){%>
+	                    	                    int count=0;
+	                    	                    	                    	                                        for( MemberExc m : excList){
+	                    	                    %>
                     <div class="row">
                     	<div class="col-md-12">
                     		<div class="row list02">
-	                    		<div class="col-md-5 categoryLine todayPlan_l"><%=m.getExcId_c() %></div>
-		                    	<div class="col-md-2 categoryLine todayPlan_l"><%=m.getReps() %> reps</div>
+	                    		<div class="col-md-5 categoryLine todayPlan_l"><%=m.getExcId_c()%></div>
+		                    	<div class="col-md-2 categoryLine todayPlan_l"><%=m.getReps()%> reps</div>
 		                    	<div class="col-md-2 categoryLine todayPlan_l"><%=m.getSets()%> sets</div>
-		                    	<div class="col-md-3 todayPlan_l"><%=m.getWeight() %> weight</div>
+		                    	<div class="col-md-3 todayPlan_l"><%=m.getWeight()%> weight</div>
                     		</div>
                     	</div>                    	
                     </div>
                     <%
-                    	count++;
-                    	if (count>10) break;                    	
-                    }
-                    }%>
+                    count++;
+                                        	if (count>10) break;                    	
+                                        }
+                                        }
+                    %>
                         
 
 
@@ -276,14 +281,18 @@
                 <!-- 식단 -->
                 <div class="row">
                     <div class="col-md-6 title01">
-                    	<div>> <%=today.get(Calendar.MONTH)+1 %>월 <%=today.get(Calendar.DATE) %>일 식단 계획</div>
+                    	<div>> <%=today.get(Calendar.MONTH)+1%>월 <%=today.get(Calendar.DATE)%>일 식단 계획</div>
                     </div>
                 </div>
                 <div class="row listContainer">
                     <div class="col-md-12">
-                    	<%if(excList.isEmpty()){  %>
+                    	<%
+                    	if(excList.isEmpty()){
+                    	%>
 	                    	<div class="list02 noPlan"> 오늘 예정된 식단이 없습니다.</div>
-	                    <%}else{%>
+	                    <%
+	                    }else{
+	                    %>
 	                    <div class="row">
 							<div class="col-md-9">
 								<div class="row list01">
@@ -297,8 +306,9 @@
 	                    	<!-- 식단 이름은 운동 id로 가져와야 됨 -->
 	                    	
 	                    <%
-	                    int count=0;
-	                    for( MemberMenuList m : menuList){%>
+	                    		                    int count=0;
+	                    		                    	                    for( MemberMenu m : menuList){
+	                    		                    %>
 	                    <div class="row">
 	                    	<div class="col-md-9">
 								<div class="row list02">

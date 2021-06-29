@@ -6,8 +6,8 @@
 <%@ page import="java.util.List, com.semi.member.menu.model.vo.*" %>
 <%@ page import="com.semi.member.model.service.*" %>
 <%
-	List<MemberExcList> exclist=(List<MemberExcList>)request.getAttribute("list");
-	List<MemberMenuList> menulist=(List<MemberMenuList>)request.getAttribute("list2");
+List<MemberExc> exclist=(List<MemberExc>)request.getAttribute("list");
+	List<MemberMenu> menulist=(List<MemberMenu>)request.getAttribute("list2");
 	String excpagebar = (String)request.getAttribute("pageBar");
 	String menupagebar = (String)request.getAttribute("pageBar2");
 	String today=(String)request.getAttribute("today");
@@ -55,19 +55,19 @@
 		<div id="list_title_container" class="col-md-12">
 			<div class="col-md-6">
 			<div id="myexc" class="list_title_area col-md-12">
-				<%=today %>요일 운동 계획
+				<%=today%>요일 운동 계획
 			</div>
 			</div>
 			<div class="col-md-6">
 			<div id="mymenu" class="list_title_area col-md-12 ">
 				<div class="col-md-10">
-					<%=today %>요일 식단 계획
+					<%=today%>요일 식단 계획
 				</div>
 				<div class="col-md-2">
 					<select style="width:100%" class="selectBtn">
-						<option value="아침" <%=time!=null&&time.equals("아침")?"selected":"" %>>아침</option>
-						<option value="점심" <%=time!=null&&time.equals("점심")?"selected":"" %>>점심</option>
-						<option value="저녁" <%=time!=null&&time.equals("저녁")?"selected":"" %>>저녁</option>
+						<option value="아침" <%=time!=null&&time.equals("아침")?"selected":""%>>아침</option>
+						<option value="점심" <%=time!=null&&time.equals("점심")?"selected":""%>>점심</option>
+						<option value="저녁" <%=time!=null&&time.equals("저녁")?"selected":""%>>저녁</option>
 					</select>
 				</div>
 			</div>
@@ -82,8 +82,12 @@
 			<!-- 운동리스트 -->	
 			<div class="col-md-6">			
 			<div id="my_list_exc" class="col-md-12">
-				<%int ecount=1; %>
-				<%for(MemberExcList mel : exclist) {%>
+				<%
+				int ecount=1;
+				%>
+				<%
+				for(MemberExc mel : exclist) {
+				%>
 				<div class="col-md-12 excinfocho">
 					<div class="list_img_area col-md-2"  style="height:80px;">
  					<img src="" class="excimg"> <br> <br> <br>
@@ -92,23 +96,25 @@
 						<input type="hidden" class="excid" name="excid" value="<%=mel.getExcId()%>">
 						<div class="excname data row">대충 저장한 운동이름1</div> 
 						<div class="row data">
-							<div class="data col-md-4 categoryLine data">무게 : <%=mel.getWeight() %>kg</div>
-							<div class="data col-md-4 categoryLine data">횟수 : <%=mel.getReps() %>reps</div>
-							<div class="data col-md-4 data">세트수 : <%=mel.getSets() %>sets</div>
+							<div class="data col-md-4 categoryLine data">무게 : <%=mel.getWeight()%>kg</div>
+							<div class="data col-md-4 categoryLine data">횟수 : <%=mel.getReps()%>reps</div>
+							<div class="data col-md-4 data">세트수 : <%=mel.getSets()%>sets</div>
 						</div>
 					</div>
 					<div class="list_button_area col-md-1">
-						<div class="row btn01" onclick="window.open('<%=request.getContextPath() %>/member/myexclistupdate?no=<%=mel.getExcNo()%>&excid=<%=mel.getExcId() %>',
+						<div class="row btn01" onclick="window.open('<%=request.getContextPath()%>/member/myexclistupdate?no=<%=mel.getExcNo()%>&excid=<%=mel.getExcId()%>',
 							'운동편집','left=500,top=300,width=400,height=400,location=no,status=no,scrollbars=yes');">수정</div>
 						<div class="row btn01" onclick="location.replace('<%=request.getContextPath()%>/member/myexclistdelete?excno=<%=mel.getExcNo()%>')">삭제</div>
 					</div>
 				</div>
-				<%} %>
+				<%
+				}
+				%>
 		
 		
 				<!-- pageBar -->
 				<div id="pageBar_mylist_exc col-md-12">
-					<%=excpagebar %>
+					<%=excpagebar%>
 				</div>
 			</div>
 			</div>
@@ -117,8 +123,12 @@
 			<!-- 식단리스트 -->	
 			<div class="col-md-6">	
 			<div id="my_list_menu" class="col-md-12">
-				<%int mcount=1; %>
-				<%for(MemberMenuList mml:menulist){%>
+				<%
+				int mcount=1;
+				%>
+				<%
+				for(MemberMenu mml:menulist){
+				%>
 				<div class="col-md-12 menuinfocho">
 					<div class="list_img_area col-md-2" style="height:80px;">
 						<img src="" class="menuimg">

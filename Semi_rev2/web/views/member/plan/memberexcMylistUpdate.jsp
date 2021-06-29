@@ -2,8 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%
-    	MemberExcList mel =(MemberExcList)request.getAttribute("exc");
-    	
+    MemberExc mel =(MemberExc)request.getAttribute("exc");
     %>
 <!DOCTYPE html>
 <html>

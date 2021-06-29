@@ -8,14 +8,13 @@
 <%@ include file="/views/common/header.jsp"%>
 <%@ page import="com.semi.member.daily.model.vo.DailyExercise, java.util.List" %>
 <%
-	List<MemberExcList> list =(List<MemberExcList>)request.getAttribute("list");
+List<MemberExc> list =(List<MemberExc>)request.getAttribute("list");
 	List<DailyExercise> delist =(List<DailyExercise>)request.getAttribute("list2");
 	List<DailyMenuList> menulist =(List<DailyMenuList>)request.getAttribute("list3");
 	List<DailyMenu> dmlist =(List<DailyMenu>)request.getAttribute("list4");
 	String pagebar = (String)request.getAttribute("pageBar");
 	String pagebar2 = (String)request.getAttribute("pageBar2");
 	String day=(String)request.getAttribute("day");
-
 %>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/Resource/css/02_dailylog.css">
@@ -55,7 +54,9 @@
 					<span>운동 목록</span>
 				</div>
 				<div id="excdown">
-				<%for(MemberExcList mel :list){ %>
+				<%
+				for(MemberExc mel :list){
+				%>
 				<div class="exc_plan_list row excday">
 					<input type="hidden" name="excno" value="<%=mel.getExcNo() %>">
 					<input type="hidden" name="excid" value="<%=mel.getExcId() %>">	

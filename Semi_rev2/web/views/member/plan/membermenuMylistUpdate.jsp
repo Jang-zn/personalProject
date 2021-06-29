@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%
-    	MemberMenuList mml =(MemberMenuList)request.getAttribute("menu");
+    MemberMenu mml =(MemberMenu)request.getAttribute("menu");
     %>
 <!DOCTYPE html>
 <html>
